@@ -25,8 +25,8 @@ To use the app, follow the installations instructions below.
 
 Before you continue...
 
-Please make sure you install all the dependencies you'll need for the project. Once you have Node.js installed on your computer
-Navigate to the working directory and do the following in your terminal
+Please make sure you install all the dependencies you'll need for the project. Once you have Node.js
+installed on your computer, navigate to the working directory and do the following in your terminal
 
 Before you proceed, make sure you fork the repo
 
