@@ -14,9 +14,11 @@ no_results_text: 'Oops, nothing found!'
 width: "95%"
 }
 }
-for (var config {
-$('.chosen-select').chosen(config['.chosen-select']);
-});
+
+// for (var config {
+// $('.chosen-select').chosen(config['.chosen-select']);
+// });
+
 // Capture the form inputs
 $("#submit").on("click", function() {
 // Form validation

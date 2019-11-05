@@ -23,15 +23,3 @@ require('./app/routing/html-routes.js')(app);
 
 //Listening to the port that was set up
 app.listen(port, () => console.log("Listening on port %s", port));
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
