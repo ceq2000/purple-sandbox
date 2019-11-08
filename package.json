@@ -28,10 +28,10 @@
     "express",
     "node"
   ],
-  "author": "Edna Jonsson",
+  "author": "Carlos Quinones",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ednas/friend-finder/issues"
+    "url": "https://github.com/ceq2000/FriendFinder/issues"
   },
-  "homepage": "https://github.com/Ednas/friend-finder#readme"
+  "homepage": "https://github.com/ceq2000/FriendFinder#readme"
 }
