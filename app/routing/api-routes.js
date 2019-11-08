@@ -16,6 +16,7 @@ module.exports = function (app) {
             photo: '',
             friendDifference: 1000
         };
+        console.log(req);
         // Here we take the result of the user's survey POST and parse it.
         var userData = req.body;
         var userName = userData.name;
@@ -63,10 +64,11 @@ module.exports = function (app) {
             console.log(totalDifference + ' Total Difference');
         }
         console.log(bestMatch); // Finally save the user's data to the database (this has to happen AFTER the check.
-        otherwise, // the database will always return that the user is the user's best friend). friends.push(userData);
+        //the database will always return that the user is the user's best friend). friends.push(userData);
             console.log('New User added');
-        console.log(userData); // Return a JSON with the user's bestMatch. This will be
+        console.table(userData); // Return a JSON with the user's bestMatch. This will be
         // used by the HTML in the next page.
+        console.log(res);
         res.json(bestMatch);
     });
 };

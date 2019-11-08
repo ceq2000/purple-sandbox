@@ -8,14 +8,14 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 //Body Parser
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.text());
-app.use(bodyParser.json({type:'application/vnd.api+json'}));
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+app.use(express.text());
+app.use(express.json({type:'application/vnd.api+json'}));
 
 // Static files
 // needs to be called before the routes in order to work
-app.use(express.static('app/public'));
+app.use(express.static(path.join(__dirname, 'app','public')));
 
 //Router
 require('./app/routing/api-routes.js')(app);

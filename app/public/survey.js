@@ -15,10 +15,6 @@ width: "95%"
 }
 }
 
-// for (var config {
-// $('.chosen-select').chosen(config['.chosen-select']);
-// });
-
 // Capture the form inputs
 $("#submit").on("click", function() {
 // Form validation
@@ -46,7 +42,7 @@ $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
 // Grab the URL of the website
 var currentURL = window.location.origin;
 // AJAX post the data to the friends API.
-$.post(currentURL + "/api/friends", userData, function(data) {
+$.post('/api/friends', userData, function(data) {
 // Grab the result from the AJAX post so that the best match's name and photo are displayed.
 $("#matchName").text(data.name);
 $('#matchImg').attr("src", data.photo);

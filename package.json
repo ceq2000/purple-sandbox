@@ -4,18 +4,21 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "morgan": "^1.7.0",
     "node": "^12.13.0"
   },
   "engines": {
     "node": "^12.13.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "morgan": "^1.7.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "start-dev": "nodemon server.js",
+    "watch": "npm run start-dev"
   },
   "repository": {
     "type": "git",
